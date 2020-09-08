@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zing Fake</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" href="./zing.css">
+</head>
+<body>
+  <div id="header">
+      <div class="header-1">
+          <div class="width-head">
+              <div class="logo"><a href="#"><img alt="logo" src="./image/Zing-logo.png"></a></div>
+              <div class="search-form">
+                  <form>
+                      <button type="submit"><i class="fas fa-search"></i></button>
+                      <input type="text" placeholder="Nhập tên bài hát, ca sĩ hoặc mv..." autocomplete="off">
+                  </form>
+              </div>
+              <div class="login">
+                  <div class="image-user"><a href="#"><img alt="logo-user" src="./image/default.jpg"></a></div>
+                  <div class="text"><a href="">Đăng Nhập</a></div>
+                  <div class="dropdown">
+                      <a href="#" onclick="showDropdown()" class="btn-drop"><i class="fas fa-chevron-down"></i></a>
+                      <div class="dropdown-content" id="myDropdown">
+                          <div class="top">
+                              <label for="check-color"><i class="fas fa-cloud-sun fa-2x"></i> Nền tối</label>
+                              <label class="switch">
+                                  <input type="checkbox" id="check-color">
+                                  <span class="check-slider round"></span>
+                              </label>
+                          </div>
+                          <div class="bottom"><button>Mua VIP ngay</button></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="header-2">
+          <ul class="width-head">
+              <li><a href="#" class="active">Trang chủ</a></li>
+              <li class="dropdown zingchart">
+                  <a href="#">#Zingchart</a>
+                  <div class="dropdown-content dropdown-content-zingchart">
+                      <div class="content-items">
+                          <div class="title">#Zingchart</div>
+                          <a href="#">Bài hát</a>
+                          <a href="#">MV</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Tuần</div>
+                          <a href="#">Bài hát</a>
+                          <a href="#">MV</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">US-UK chart</div>
+                          <a href="#">Bài hát</a>
+                          <a href="#">MV</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Kpop chart</div>
+                          <a href="#">Bài hát</a>
+                          <a href="#">MV</a>
+                      </div>
+                  </div>
+              </li>
+              <li class="dropdown top-100">
+                  <a href="#">Top 100</a>
+                  <div class="dropdown-content dropdown-content-top-100">
+                      <div class="content-items">
+                          <div class="title">Việt Nam</div>
+                          <a href="#">Nhạc Trẻ</a>
+                          <a href="#">Nhạc Trữ Tình</a>
+                          <a href="#">Quê Hương</a>
+                          <a href="#">Nhạc Cách Mạng</a>
+                          <a href="#">Rap / Hip Hop Việt</a>
+                          <a href="#">Rock Việt</a>
+                          <a href="#">Dance Việt</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Âu Mỹ</div>
+                          <a href="#">Pop</a>
+                          <a href="#">Rock</a>
+                          <a href="#">Rap / Hip Hop</a>
+                          <a href="#">Country</a>
+                          <a href="#">Electronic / Dance</a>
+                          <a href="#">R&B / Soul</a>
+                          <a href="#">Audiophile</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Châu Á</div>
+                          <a href="#">Hàn Quốc</a>
+                          <a href="#">Nhật Bản</a>
+                          <a href="#">Hoa Ngữ</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Hòa Tấu</div>
+                          <a href="#">Classical</a>
+                          <a href="#">Piano</a>
+                          <a href="#">Guitar</a>
+                          <a href="#">Violin</a>
+                          <a href="#">Cello</a>
+                          <a href="#">Saxophone</a>
+                          <a href="#">Nhạc cụ khác</a>
+                      </div>
+                  </div>
+              </li>
+              <li class="dropdown theme">
+                  <a href="#">Chủ đề</a>
+                  <div class="dropdown-content dropdown-content-theme">
+                      <div class="content-items">
+                          <div class="title">Đề Xuất</div>
+                          <a href="#">Nhạc HOT</a>
+                          <a href="#">Những bài HITs</a>
+                          <a href="#">Nhạc Việt bất hủ</a>
+                          <a href="#">Nhạc Âu Mỹ bất hủ</a>
+                          <a href="#">Kpop HITs</a>
+                          <a href="#">Nhạc Thúy Nga</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Thể Loại</div>
+                          <a href="#">EDM</a>
+                          <a href="#">Accoustic</a>
+                          <a href="#">Indie</a>
+                          <a href="#">Nhạc không lời</a>
+                          <a href="#">Trữ tình và Bolero</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Tâm Trạng</div>
+                          <a href="#">Những ngày mưa</a>
+                          <a href="#">Tình yêu</a>
+                          <a href="#">Buồn</a>
+                          <a href="#">Thư giãn</a>
+                          <a href="#">Động lực</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Hoạt Động</div>
+                          <a href="#">Làm việc</a>
+                          <a href="#">Yoga</a>
+                          <a href="#">Cafe</a>
+                          <a href="#">Cuối tuần</a>
+                          <a href="#">Tiệc tùng</a>
+                          <a href="#">Du lịch</a>
+                      </div>
+                  </div>
+              </li>
+              <li class="dropdown mv">
+                  <a href="#">MV</a>
+                  <div class="dropdown-content dropdown-content-mv">
+                      <div class="content-items">
+                          <div class="title">Việt Nam</div>
+                          <a href="#">Nhạc Trẻ</a>
+                          <a href="#">Nhạc Trữ Tình</a>
+                          <a href="#">Dance Việt</a>
+                          <a href="#">Rock Việt</a>
+                          <a href="#">Rap / Hip Hop Việt</a>
+                          <a href="#">Nhạc Trịnh</a>
+                          <a href="#">Nhạc Thiếu Nhi</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Âu Mỹ</div>
+                          <a href="#">Pop</a>
+                          <a href="#">Rock</a>
+                          <a href="#">Rap / Hip Hop</a>
+                          <a href="#">Country</a>
+                          <a href="#">Electronic / Dance</a>
+                          <a href="#">R&B / Soul</a>
+                          <a href="#">Audiophile</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Châu Á</div>
+                          <a href="#">Hàn Quốc</a>
+                          <a href="#">Nhật Bản</a>
+                          <a href="#">Hoa Ngữ</a>
+                          <a href="#">Thái Lan</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Hòa Tấu</div>
+                          <a href="#">Classical</a>
+                          <a href="#">Piano</a>
+                          <a href="#">Guitar</a>
+                          <a href="#">Violin</a>
+                          <a href="#">Cello</a>
+                          <a href="#">Saxophone</a>
+                          <a href="#">Nhạc cụ dân tộc</a>
+                      </div>
+                  </div>
+              </li>
+              <li class="dropdown album">
+                  <a href="#">Album</a>
+                  <div class="dropdown-content dropdown-content-album">
+                      <div class="content-items">
+                          <div class="title">Việt Nam</div>
+                          <a href="#">Nhạc Trẻ</a>
+                          <a href="#">Nhạc Trữ Tình</a>
+                          <a href="#">Dance Việt</a>
+                          <a href="#">Rock Việt</a>
+                          <a href="#">Rap / Hip Hop Việt</a>
+                          <a href="#">Nhạc Trịnh</a>
+                          <a href="#">Nhạc Thiếu Nhi</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Âu Mỹ</div>
+                          <a href="#">Pop</a>
+                          <a href="#">Rock</a>
+                          <a href="#">Rap / Hip Hop</a>
+                          <a href="#">Country</a>
+                          <a href="#">Electronic / Dance</a>
+                          <a href="#">R&B / Soul</a>
+                          <a href="#">Audiophile</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Châu Á</div>
+                          <a href="#">Hàn Quốc</a>
+                          <a href="#">Nhật Bản</a>
+                          <a href="#">Hoa Ngữ</a>
+                          <a href="#">Thái Lan</a>
+                      </div>
+                      <div class="content-items">
+                          <div class="title">Hòa Tấu</div>
+                          <a href="#">Classical</a>
+                          <a href="#">Piano</a>
+                          <a href="#">Guitar</a>
+                          <a href="#">Violin</a>
+                          <a href="#">Cello</a>
+                          <a href="#">Saxophone</a>
+                          <a href="#">Nhạc cụ dân tộc</a>
+                      </div>
+                  </div>
+              </li>
+              <li class="dropdown-singer">
+                  <a href="#">Nghệ sĩ</a>
+                  <div class="dropdown-content-singer">
+                      <a href="#">Việt Nam</a>
+                      <a href="#">Âu Mỹ</a>
+                      <a href="#">Hàn Quốc</a>
+                      <a href="#">Nhật Bản</a>
+                      <a href="#">Hoa Ngữ</a>
+                      <a href="#">Hòa Tấu</a>
+                  </div>
+              </li>
+              <li><a href="#">Nhạc cá nhân</a></li>
+              <li><a href="">VIP</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="slider">
+      <div class="slide-content fade">
+          <img alt="slide-1" src="./image/slide-1.jpg">
+      </div>
+      <div class="slide-content fade">
+          <img alt="slide-2" src="./image/slide-2.jpg">
+      </div>
+      <div class="slide-content fade">
+          <img alt="slide-3" src="./image/slide-3.jpg">
+      </div>
+      <div class="slide-content fade">
+          <img alt="slide-4" src="./image/slide-4.jpg">
+      </div>
+      <div class="slide-content fade">
+          <img alt="slide-5" src="./image/slide-5.jpg">
+      </div>
+      <a class="prev" onclick="plusSlide(-1)"><i class="fas fa-chevron-left"></i></a>
+      <a class="next" onclick="plusSlide(1)"><i class="fas fa-chevron-right"></i></a>
+  </div>
+
+  <div class="container">
+      <div class="content">
+          <div class="component">
+              <div class="component-head">
+                  <div class="title">Cà phê cuối tuần</div>
+                  <a href="#">Xem thêm</a>
+              </div>
+              <div class="component-song">
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/ben-ly-cafe-sang.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Bên ly cà phê sáng</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/cafe-cu-vi-moi.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Cà phê cũ vị mới</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/cafe-cuoi-tuan.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Cà phê cuối tuần</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/cafe-thoi.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Cà phê thôi</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="component">
+              <div class="component-head">
+                  <div class="title">Ca khúc bất hủ</div>
+                  <a href="#">Xem thêm</a>
+              </div>
+              <div class="component-song">
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/c-pop-cover.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Top mashup cover</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/90slove.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">90s love</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/hot-new-arrivals.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Hot new arrivals</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/nghe-la-ghien.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Nghe là ghiền</div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="component">
+              <div class="component-head">
+                  <div class="title">Dòng chảy v-pop</div>
+                  <a href="#">Xem thêm</a>
+              </div>
+              <div class="component-song">
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/nhung-giai-dieu-vpop-tuoi-vui.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Giai điệu v-pop tươi vui</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/nhung-tinh-khuc-da-diet.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Những tình khúc da diết</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/nhac-buon.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Nhạc buồn</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/tinh-khuc-vuot-thoi-gian.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Tình khúc vượt thời gian</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="zing-chart content">
+          <div class="bg">
+              <div class="component-left">
+                  <div class="top">
+                      <button class="btn-zingchart">#zingchart</button>
+                      <div class="date">29/07/2019 8:00</div>
+                      <button class="btn-play-all"><i class="fas fa-play"></i> Nghe tất cả</button>
+                  </div>
+                  <div class="bottom">
+                      <div>08</div>
+                      <div>10</div>
+                      <div>12</div>
+                      <div>14</div>
+                      <div>16</div>
+                      <div>18</div>
+                      <div>20</div>
+                      <div>22</div>
+                      <div>00</div>
+                      <div>02</div>
+                      <div>04</div>
+                      <div>06</div>
+                  </div>
+              </div>
+
+              <div class="component-right">
+                  <div class="zingchart-rank">
+                      <div class="rank-number color-blue">01</div>
+                      <div class="bg-img" style="background: url('./image/song-gio.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="title-rank">
+                          <div class="title-1">Chạm đỉnh Zing 20 lần</div>
+                          <div class="title-2">Sóng gió</div>
+                          <div class="title-3">Jack, K-ICM</div>
+                      </div>
+                      <div class="rank-percent color-blue">64%</div>
+                  </div>
+                  <div class="zingchart-rank">
+                      <div class="rank-number color-aqua">02</div>
+                      <div class="bg-img" style="background: url('./image/neu-ngay-ay.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="title-rank">
+                          <div class="title-2">Nếu ngày ấy</div>
+                          <div class="title-3">Soobin Hoàng Sơn</div>
+                      </div>
+                      <div class="rank-percent color-aqua">21%</div>
+                  </div>
+                  <div class="zingchart-rank">
+                      <div class="rank-number color-red">03</div>
+                      <div class="bg-img" style="background: url('./image/thang-nam-khong-quen.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="title-rank">
+                          <div class="title-2">Tháng năm không quên</div>
+                          <div class="title-3">H2K, KN</div>
+                      </div>
+                      <div class="rank-percent color-red">15%</div>
+                  </div>
+                  <div class="zingchart-rank">
+                      <div class="rank-number">04</div>
+                      <div class="bg-img" style="background: url('./image/tranh-duyen.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="title-rank">
+                          <div class="title-2">Tránh duyên</div>
+                          <div class="title-3">Đình Dũng</div>
+                      </div>
+                  </div>
+                  <div class="zingchart-rank">
+                      <div class="rank-number">05</div>
+                      <div class="bg-img" style="background: url('./image/dau-de-truong-thanh.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="title-rank">
+                          <div class="title-2">Đau để trưởng thành</div>
+                          <div class="title-3">OnlyC</div>
+                      </div>
+                  </div>
+                  <div class="view-other"><a href="#">Xem tất cả</a></div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="zingchart-week content">
+          <div class="title-2"><a href="#">#ZINGCHART Tuần <i class="fas fa-chevron-right"></i></a></div>
+          <div class="week-content">
+              <div class="bg-week">
+                  <div class="bg-img-week" style="background: url('./image/song-vn.jpg'); background-size: cover; background-position: center;"></div>
+              </div>
+              <div class="bg-week">
+                  <div class="bg-img-week" style="background: url('./image/mv-vn.jpg'); background-size: cover; background-position: center;"></div>
+              </div>
+              <div class="bg-week">
+                  <div class="bg-img-week" style="background: url('./image/song-usuk.jpg'); background-size: cover; background-position: center;"></div>
+              </div>
+              <div class="bg-week">
+                  <div class="bg-img-week" style="background: url('./image/song-kpop.jpg'); background-size: cover; background-position: center;"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="content">
+          <div class="component">
+              <div class="top-100"><a href="#">Top 100 <i class="fas fa-chevron-right"></i></a></div>
+              <div class="component-song">
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/top-100-tre.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Top 100 ca khúc nhạc trẻ</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/top-100-tru-tinh.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Top 100 ca khúc trữ tình</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/top-100-rock.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Top 100 bản rock Việt</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/top-100-dance.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Top 100 dance Việt hay nhất</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="content new-song">
+          <div class="new-song-head">
+              <div class="title">Bài hát mới</div>
+              <button class="btn-play-all"><i class="fas fa-play"></i> Nghe tất cả</button>
+          </div>
+          <div class="new-song-content">
+              <div class="left-new-song">
+                  <div class="song-item">
+                      <div class="bg" style="background: url('./image/kem-chanh.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="content-title">
+                          <div class="song-name">Kem Chanh</div>
+                          <div class="singer">Tuấn</div>
+                      </div>
+                      <div class="icon icon-1" title="Thêm vào danh sách phát"><i class="fas fa-plus"></i></div>
+                      <div class="icon icon-2" title="Khác"><i class="fas fa-bars"></i></div>
+                  </div>
+
+                  <div class="song-item">
+                      <div class="bg" style="background: url('./image/lo-lem.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="content-title">
+                          <div class="song-name">Lọ Lem</div>
+                          <div class="singer">Song Luân</div>
+                      </div>
+                      <div class="icon icon-1" title="Thêm vào danh sách phát"><i class="fas fa-plus"></i></div>
+                      <div class="icon icon-2" title="Khác"><i class="fas fa-bars"></i></div>
+                  </div>
+
+                  <div class="song-item">
+                      <div class="bg" style="background: url('./image/vi-anh-thuong-em.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="content-title">
+                          <div class="song-name">Vì Anh Thương Em</div>
+                          <div class="singer">Phan Duy Anh</div>
+                      </div>
+                      <div class="icon icon-1" title="Thêm vào danh sách phát"><i class="fas fa-plus"></i></div>
+                      <div class="icon icon-2" title="Khác"><i class="fas fa-bars"></i></div>
+                  </div>
+
+                  <div class="song-item">
+                      <div class="bg" style="background: url('./image/thuong-the-du-roi.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="content-title">
+                          <div class="song-name">Thương Thế Đủ Rồi</div>
+                          <div class="singer">Thảo Milk</div>
+                      </div>
+                      <div class="icon icon-1" title="Thêm vào danh sách phát"><i class="fas fa-plus"></i></div>
+                      <div class="icon icon-2" title="Khác"><i class="fas fa-bars"></i></div>
+                  </div>
+
+                  <div class="song-item">
+                      <div class="bg" style="background: url('./image/dung-yeu-nua-em-met-roi.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="content-title">
+                          <div class="song-name">Đừng Yêu Nữa Em Mệt Rồi</div>
+                          <div class="singer">MIN</div>
+                      </div>
+                      <div class="icon icon-1" title="Thêm vào danh sách phát"><i class="fas fa-plus"></i></div>
+                      <div class="icon icon-2" title="Khác"><i class="fas fa-bars"></i></div>
+                  </div>
+              </div>
+
+              <div class="right">
+                  <div class="song-item">
+                      <div class="bg" style="background: url('./image/len-xe-di-em-ơi.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="content-title">
+                          <div class="song-name">Lên Xe Đi Em Ơi</div>
+                          <div class="singer">Đinh Kiến Phong, Thế Anh BLA</div>
+                      </div>
+                      <div class="icon icon-1" title="Thêm vào danh sách phát"><i class="fas fa-plus"></i></div>
+                      <div class="icon icon-2" title="Khác"><i class="fas fa-bars"></i></div>
+                  </div>
+
+                  <div class="song-item">
+                      <div class="bg" style="background: url('./image/anh-thuong-em-nhat-ma.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="content-title">
+                          <div class="song-name">Anh Thương Em Nhất Mà</div>
+                          <div class="singer">Tường Quân</div>
+                      </div>
+                      <div class="icon icon-1" title="Thêm vào danh sách phát"><i class="fas fa-plus"></i></div>
+                      <div class="icon icon-2" title="Khác"><i class="fas fa-bars"></i></div>
+                  </div>
+
+                  <div class="song-item">
+                      <div class="bg" style="background: url('./image/ang-may-vo-tinh.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="content-title">
+                          <div class="song-name">Áng Mây Vô Tình</div>
+                          <div class="singer">Lương Gia Hùng</div>
+                      </div>
+                      <div class="icon icon-1" title="Thêm vào danh sách phát"><i class="fas fa-plus"></i></div>
+                      <div class="icon icon-2" title="Khác"><i class="fas fa-bars"></i></div>
+                  </div>
+
+                  <div class="song-item">
+                      <div class="bg" style="background: url('./image/noi-nay-co-anh.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="content-title">
+                          <div class="song-name">Nơi Này Có Anh</div>
+                          <div class="singer">Sơn Tùng MTP</div>
+                      </div>
+                      <div class="icon icon-1" title="Thêm vào danh sách phát"><i class="fas fa-plus"></i></div>
+                      <div class="icon icon-2" title="Khác"><i class="fas fa-bars"></i></div>
+                  </div>
+
+                  <div class="song-item">
+                      <div class="bg" style="background: url('./image/khong-con-binh-yen.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle"></i>
+                          </div>
+                      </div>
+                      <div class="content-title">
+                          <div class="song-name">Không Còn Bình Yên</div>
+                          <div class="singer">JUUN Đăng Dũng</div>
+                      </div>
+                      <div class="icon icon-1" title="Thêm vào danh sách phát"><i class="fas fa-plus"></i></div>
+                      <div class="icon icon-2" title="Khác"><i class="fas fa-bars"></i></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="content theme-category">
+          <div class="theme-top">
+              <div class="title">Chủ đề & thể loại <i class="fas fa-chevron-right"></i></div>
+              <ul class="top-nav">
+                  <li><a href="#" class="nav-link theme-active">Chọn lọc</a></li>
+                  <li><a href="#" class="nav-link">Chủ đề</a></li>
+                  <li><a href="#" class="nav-link">Thể loại</a></li>
+              </ul>
+          </div>
+          <div class="theme-content">
+              <div class="theme-item">
+                  <div class="theme-bg" style="background: url('./image/trending.jpg'); background-size:cover; background-position: center;">
+                      <div class="bg-overlay">
+                          <div class="theme-title">Trending</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="theme-item">
+                  <div class="theme-bg" style="background: url('./image/nhac-viet.jpg'); background-size:cover; background-position: center;">
+                      <div class="bg-overlay">
+                          <div class="theme-title">Nhạc Việt</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="theme-item">
+                  <div class="theme-bg" style="background: url('./image/nhac-au-my.jpg'); background-size:cover; background-position: center;">
+                      <div class="bg-overlay">
+                          <div class="theme-title">Nhạc Âu Mỹ</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="theme-item">
+                  <div class="theme-bg" style="background: url('./image/nhac-han.jpg'); background-size:cover; background-position: center;">
+                      <div class="bg-overlay">
+                          <div class="theme-title">Nhạc Hàn</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="theme-content">
+              <div class="theme-item">
+                  <div class="theme-bg" style="background: url('./image/nhac-hoa.jpg'); background-size:cover; background-position: center;">
+                      <div class="bg-overlay">
+                          <div class="theme-title">Nhạc Hoa</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="theme-item">
+                  <div class="theme-bg" style="background: url('./image/bolero.jpg'); background-size:cover; background-position: center;">
+                      <div class="bg-overlay">
+                          <div class="theme-title">Trữ Tình & Bolero</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="theme-item">
+                  <div class="theme-bg" style="background: url('./image/edm.jpg'); background-size:cover; background-position: center;">
+                      <div class="bg-overlay">
+                          <div class="theme-title">EDM</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="theme-item">
+                  <div class="theme-bg" style="background: url('./image/tinh-yeu.jpg'); background-size:cover; background-position: center;">
+                      <div class="bg-overlay">
+                          <div class="theme-title">Tình Yêu</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="content">
+          <div class="album-hot">
+              <div class="theme-top">
+                  <div class="title">Album hot <i class="fas fa-chevron-right"></i></div>
+                  <ul class="top-nav">
+                      <li><a href="#" class="nav-link theme-active">Chọn lọc</a></li>
+                      <li><a href="#" class="nav-link">Việt Nam</a></li>
+                      <li><a href="#" class="nav-link">Âu Mỹ</a></li>
+                      <li><a href="#" class="nav-link">Hàn Quốc</a></li>
+                  </ul>
+              </div>
+              <div class="component-song">
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/xoa-sach-het-di.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Xóa sạch hết đi</div>
+                      <div class="singer">Cao Nam Thành</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/ngay-em-den.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Ngày em đến trái tim anh đầy sóng gió</div>
+                      <div class="singer">Trung Tự</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/song-gio.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Sóng gió</div>
+                      <div class="singer">Jack, K-ICM</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/bac-phan.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Bạc phận</div>
+                      <div class="singer">Jack, K-ICM</div>
+                  </div>
+              </div>
+
+              <div class="component-song">
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/het-hon.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Hết hồn</div>
+                      <div class="singer">Mr K, Mew Amazing</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/vuong-van.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Vấn vương</div>
+                      <div class="singer">Specter, tris</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/dung-noi-toi-dien.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Đừng nói tôi điên</div>
+                      <div class="singer">Hiền Hồ</div>
+                  </div>
+                  <div class="song">
+                      <div class="song-img">
+                          <div class="bg-song" style="background: url('./image/nghi-ve-anh.jpg');background-size: cover;
+                          background-position: center;">
+                              <div class="overlay">
+                                  <i class="fas fa-play-circle fa-3x"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="song-title">Nghĩ về anh</div>
+                      <div class="singer">Văn Mai Hương</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="content content-mv-hot">
+          <div class="mv-hot">
+              <div class="theme-top">
+                  <div class="title">MV hot <i class="fas fa-chevron-right"></i></div>
+                  <ul class="top-nav">
+                      <li><a href="#" class="nav-link theme-active">Chọn lọc</a></li>
+                      <li><a href="#" class="nav-link">Việt Nam</a></li>
+                      <li><a href="#" class="nav-link">Âu Mỹ</a></li>
+                      <li><a href="#" class="nav-link">Hàn Quốc</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="mv-content">
+              <div class="left">
+                  <div class="left-bg">
+                      <div class="overlay-bg">
+                          <div class="overlay">
+                              <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                          <div class="mv-title">
+                              <div class="song-mv-title">Gửi Em Mối Tình Đầu</div>
+                              <div class="singer-mv-title">GiGun</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="right">
+                  <div class="right-item">
+                      <div class="item-content">
+                          <div class="item-content-bg" style="background: url('./image/co-tat-ca-nhung-thieu-anh.jpg'); background-size: cover; background-position: center;">
+                              <div class="overlay-bg">
+                                  <div class="overlay">
+                                      <i class="fas fa-play-circle fa-3x"></i>
+                                  </div>
+                                  <div class="mv-title">
+                                      <div class="song-mv-title">Có tất cả nhưng thiếu anh</div>
+                                      <div class="singer-mv-title">ERIK</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="item-content">
+                          <div class="item-content-bg" style="background: url('./image/den-sau-mot-nguoi.jpg'); background-size: cover; background-position: center;">
+                              <div class="overlay-bg">
+                                  <div class="overlay">
+                                      <i class="fas fa-play-circle fa-3x"></i>
+                                  </div>
+                                  <div class="mv-title">
+                                      <div class="song-mv-title">Đến sau một người</div>
+                                      <div class="singer-mv-title">Châu Khải Phong</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="right-item">
+                      <div class="item-content">
+                          <div class="item-content-bg" style="background: url('./image/lo-lem-2.jpg'); background-size: cover; background-position: center;">
+                              <div class="overlay-bg">
+                                  <div class="overlay">
+                                      <i class="fas fa-play-circle fa-3x"></i>
+                                  </div>
+                                  <div class="mv-title">
+                                      <div class="song-mv-title">Lọ lem</div>
+                                      <div class="singer-mv-title">Song Luân</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="item-content">
+                          <div class="item-content-bg" style="background: url('./image/em-dung-nhu-the.jpg'); background-size: cover; background-position: center;">
+                              <div class="overlay-bg">
+                                  <div class="overlay">
+                                      <i class="fas fa-play-circle fa-3x"></i>
+                                  </div>
+                                  <div class="mv-title">
+                                      <div class="song-mv-title">Em đừng như thế</div>
+                                      <div class="singer-mv-title">Dickson</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="content singer-highlight">
+          <div class="title">Nghệ sĩ nổi bật <i class="fas fa-chevron-right"></i></div>
+          <div class="singer-component">
+              <div class="singer-item">
+                  <div class="bg-item-sing">
+                      <div class="bg-singer" style="background: url('./image/wendy-thao.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay"></div>
+                      </div>
+                  </div>
+                  <div class="name-sing">Wendy Thảo</div>
+              </div>
+              <div class="singer-item">
+                  <div class="bg-item-sing">
+                      <div class="bg-singer" style="background: url('./image/huong-tram.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay"></div>
+                      </div>
+                  </div>
+                  <div class="name-sing">Hương Tràm</div>
+              </div>
+              <div class="singer-item">
+                  <div class="bg-item-sing">
+                      <div class="bg-singer" style="background: url('./image/duc-phuc.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay"></div>
+                      </div>
+                  </div>
+                  <div class="name-sing">Đức Phúc</div>
+              </div>
+              <div class="singer-item">
+                  <div class="bg-item-sing">
+                      <div class="bg-singer" style="background: url('./image/only-c.jpg'); background-size: cover; background-position: center;">
+                          <div class="overlay"></div>
+                      </div>
+                  </div>
+                  <div class="name-sing">OnlyC</div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="content footer">
+          <div class="footer-1">
+              <div><img src="./image/logo.png" alt="logo" class="logo"></div>
+              <div class="text-foot">Hãy đăng nhập để khám phá thêm nhiều bài hát dành riêng cho bạn</div>
+              <div><button>ĐĂNG NHẬP</button></div>
+          </div>
+          <div class="footer-2">
+              <div class="foot-21">
+                  <div><img src="./image/logo.png" alt="logo" class="logo"></div>
+                  <div class="text-foot-2">Một sản phẩm của Zalo</div>
+              </div>
+              <ul class="nav-foot">
+                  <li><a href="#">Giới thiệu</a></li>
+                  <li><a href="#">Liên hệ</a></li>
+                  <li><a href="#">Quảng cáo</a></li>
+                  <li><a href="#">Góp ý</a></li>
+                  <li><a href="#">Thỏa thuận sử dụng</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      //Click dropdown
+      function showDropdown() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+      //Slide show
+      var slideIndex = 1;
+      showSlide(slideIndex);
+      function plusSlide(n) {
+          showSlide(slideIndex += n);
+      }
+      function showSlide(n) {
+          var i;
+          var slides = document.getElementsByClassName('slide-content');
+          if(n > slides.length) {
+              slideIndex = 1;
+          }
+          if(n < 1) {
+              slideIndex = slides.length;
+          }
+          for(i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+      }
+  </script>
+</body>
+</html>
